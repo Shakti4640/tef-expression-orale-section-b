@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Chapter 25: Complete Expression Banks — Enthusiasm, Reassurance, Persuasion & Fillers — TEF Section B Mastery</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.75;
+            color: #1a202c;
+            background-color: #f7fafc;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.08);
+            padding: 48px 52px;
+        }
+        
+        .content { max-width: 950px; margin: 0 auto; color: #1a202c; }
+        .content h1 {
+            color: #1a202c; margin: 32px 0 20px;
+            padding-bottom: 12px;
+            border-bottom: 4px solid #dc2626;
+            font-size: 2.1em;
+            font-weight: 700;
+        }
+        .content h2 {
+            color: #1a202c; margin: 28px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #ef4444;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+        .content h3 { color: #1a202c; margin: 22px 0 12px; font-size: 1.3em; font-weight: 600; }
+        .content h4 { color: #2d3748; margin: 18px 0 10px; font-size: 1.1em; font-weight: 600; }
+        .content p  { margin-bottom: 16px; line-height: 1.8; color: #1a202c; }
+        .content ul, .content ol { margin: 12px 0 18px 30px; color: #1a202c; }
+        .content li { margin-bottom: 8px; line-height: 1.75; color: #1a202c; }
+        .content hr { border: none; border-top: 2px solid #e2e8f0; margin: 26px 0; }
+        .content pre {
+            background: #f7fafc !important;
+            border: 1px solid #cbd5e0 !important;
+            border-left: 4px solid #dc2626 !important;
+            padding: 18px !important; overflow-x: auto; margin: 18px 0; border-radius: 6px;
+            font-family: 'Consolas','Monaco','Courier New',monospace !important;
+            font-size: 0.9em !important;
+        }
+        .content pre:not([style*="color"]) { color: #1a202c !important; }
+        .content code {
+            font-family: 'Consolas','Monaco','Courier New',monospace !important;
+            font-size: 0.88em !important;
+        }
+        .content code:not(pre code) {
+            background: #fee2e2 !important;
+            color: #1a202c !important;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .content pre code { background: transparent !important; padding: 0; }
+        .content table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .content th {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: white; padding: 12px 16px; text-align: left;
+            font-weight: 600;
+        }
+        .content td { padding: 11px 16px; border: 1px solid #e2e8f0; color: #1a202c; }
+        .content tr:nth-child(even) td { background: #fef2f2; }
+        .content blockquote {
+            border-left: 4px solid #dc2626; background: #fef2f2;
+            padding: 14px 20px; margin: 18px 0; border-radius: 0 6px 6px 0;
+            color: #1a202c;
+        }
+        .content strong { color: #1a202c; font-weight: 600; }
+        .px-2 { padding: 0; }
+        .chat-message { background: transparent; padding: 0; margin: 0; }
+
+        /* Bottom nav bar only */
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 24px 0;
+            margin-top: 50px;
+            border-top: 3px solid #ef4444;
+        }
+        .nav-button {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 12px 26px;
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: white !important; text-decoration: none;
+            border-radius: 8px; font-weight: 600; font-size: 0.95em;
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(220,38,38,0.35);
+        }
+        .nav-button:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(220,38,38,0.5); }
+        .nav-button.disabled { background: #cbd5e1; box-shadow: none; pointer-events: none; }
+        .nav-button.home {
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            box-shadow: 0 2px 8px rgba(37,99,235,0.35);
+        }
+        .nav-button.home:hover { box-shadow: 0 4px 14px rgba(37,99,235,0.5); }
+        .page-info { color: #718096; font-size: 0.9em; text-align: center; }
+
+        /* Progress bar */
+        #progress-track {
+            position: fixed; top: 20px; right: 20px;
+            width: 10px; height: 150px;
+            background: rgba(220,38,38,0.2);
+            border: 2px solid #dc2626;
+            border-radius: 6px; overflow: hidden; z-index: 1000;
+        }
+        #progress-fill {
+            width: 100%;
+            background: linear-gradient(180deg, #dc2626, #b91c1c);
+            height: 0%;
+            transition: height 0.15s ease;
+        }
+        #progress-pct {
+            position: fixed; top: 0px; right: 16px;
+            color: #b91c1c; font-size: 14px; font-weight: bold;
+            z-index: 1001;
+            text-shadow: 0 1px 2px rgba(255,255,255,0.9);
+            line-height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="chat-message" data-index="13">
+<div class="px-2"><h1>Chapter 25: Complete Expression Banks — Enthusiasm, Reassurance, Persuasion &amp; Fillers</h1>
+<hr>
+<blockquote>
+<h2>📦 SECTION SUMMARY</h2>
+<p><strong>What this chapter covers:</strong> Every expression you need for TEF Section B, organized not by scenario type but by FUNCTION — what the expression DOES in the conversation. We cover six complete banks: Enthusiasm Expressions (for building excitement), Reassurance Expressions (for calming fears), Persuasion Expressions (for pushing toward yes), Objection-Handling Expressions (for pivoting after the examiner resists), Filler Words (for buying thinking time naturally), and the 5-Finger Rule (for when your mind goes completely blank).</p>
+<p><strong>Why this chapter exists:</strong> Chapters 9-24 gave you expressions organized by SCENARIO and OBJECTION TYPE. That organization is perfect for studying. But in the EXAM, your brain does not think "I need a Money Objection counter." Your brain thinks "I need to sound excited right now" or "I need to calm my friend down" or "I need to transition to a new argument." This chapter reorganizes everything by EMOTIONAL FUNCTION — what you need to DO in the moment — so your brain can grab the right tool instantly.</p>
+<p><strong>The critical distinction:</strong> Vocabulary is not the same as expression. Vocabulary is knowing that "génial" means "great." Expression is knowing that "Le truc génial, c'est que..." is how a French person naturally introduces an exciting detail in conversation. The TEF does not test whether you know words. It tests whether you can USE words the way native speakers use them — in natural, fluid, context-appropriate expressions. This chapter is about EXPRESSIONS, not vocabulary lists.</p>
+<p><strong>What connects to previous chapters:</strong> Every expression in this chapter has appeared somewhere in Chapters 4-24. Nothing here is new. What IS new is the ORGANIZATION — grouping expressions by their conversational function rather than by topic. Think of Chapters 9-24 as your training. Think of this chapter as your QUICK-DRAW HOLSTER — the expressions arranged for instant access under exam pressure.</p>
+<p><strong>Difficulty Level:</strong> ⭐⭐ (Low — this is a reference chapter, not a concepts chapter. The difficulty is in MEMORIZING and DEPLOYING, not in understanding.)</p>
+</blockquote>
+<hr>
+<h2>1️⃣ HOW EXPRESSIONS WORK IN REAL CONVERSATION</h2>
+<p>Before we dive into the banks, you need to understand something fundamental about how native French speakers construct their sentences. This understanding will transform how you USE the expressions in this chapter.</p>
+<p>Native speakers do not build sentences word by word. They build sentences from PRE-ASSEMBLED CHUNKS — fixed or semi-fixed expressions that they drop into place like Lego blocks. When a French person wants to highlight something exciting, they do not think "I need an adjective meaning 'great' and a structure to introduce it." They AUTOMATICALLY reach for a chunk like "Le truc génial, c'est que..." and then fill in the specific detail.</p>
+<p>These chunks are what linguists call COLLOCATIONS and FORMULAIC SEQUENCES. They are the building blocks of fluent speech. And they are EXACTLY what the Lexical Range criterion (25% of your score — Chapter 2) is measuring.</p>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>╔══════════════════════════════════════════════════════════════════╗
+</span>║                                                                  ║
+║  HOW A B1 SPEAKER BUILDS A SENTENCE:                            ║
+║  Word + Word + Word + Word                                      ║
+║  "C'est... euh... très... bien... parce que... euh..."          ║
+║  → Slow, hesitant, simple, mechanical                           ║
+║                                                                  ║
+║  HOW A B2/C1 SPEAKER BUILDS A SENTENCE:                        ║
+║  [Chunk] + [Detail] + [Chunk] + [Detail]                       ║
+║  "Le truc génial, c'est que [detail]. Et en plus de ça,        ║
+║  [detail]. Franchement, c'est une occasion en or !"             ║
+║  → Fluid, natural, varied, confident                            ║
+║                                                                  ║
+║  THE DIFFERENCE IS NOT VOCABULARY SIZE.                          ║
+║  THE DIFFERENCE IS CHUNK SIZE.                                   ║
+║                                                                  ║
+║  B1 speakers know words.                                         ║
+║  B2/C1 speakers know EXPRESSIONS.                               ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝</code></pre></div>
+<p>This is why memorizing individual words ("génial," "incroyable," "fantastique") is far less useful than memorizing COMPLETE EXPRESSIONS ("Le truc génial, c'est que...," "C'est une occasion en or !," "On va passer un moment incroyable !"). The expression carries the word AND the structure AND the natural rhythm of spoken French — all in one package.</p>
+<p>Every expression in this chapter is a CHUNK you can drop into conversation. Learn them as complete units. Practice them as complete units. Deploy them as complete units.</p>
+<hr>
+<h2>2️⃣ BANK 1: ENTHUSIASM EXPRESSIONS — Building Excitement</h2>
+<p>These expressions are your FUEL. They create energy, build anticipation, and make the activity sound irresistible. You need them throughout the conversation — in your opening, when presenting details, when countering objections, and especially in your closing.</p>
+<h3>The Core Enthusiasm Expressions</h3>
+<table><thead><tr><th>#</th><th>French Expression</th><th>Literal Meaning</th><th>When to Use</th><th>Energy Level</th></tr></thead><tbody><tr><td>1</td><td>"C'est une occasion en or !"</td><td>It's a golden opportunity!</td><td>When highlighting that this chance is rare and valuable</td><td>🔥🔥🔥 High</td></tr><tr><td>2</td><td>"On ne peut pas laisser passer ça !"</td><td>We can't let this pass!</td><td>When creating urgency — this chance will not come again</td><td>🔥🔥🔥 High</td></tr><tr><td>3</td><td>"C'est le moment ou jamais !"</td><td>It's now or never!</td><td>Final push — when you need the friend to decide NOW</td><td>🔥🔥🔥🔥 Very High</td></tr><tr><td>4</td><td>"Ça va être de la bombe !"</td><td>It's going to be awesome!</td><td>When building excitement about the experience itself</td><td>🔥🔥🔥 High</td></tr><tr><td>5</td><td>"J'en reviens pas de notre chance !"</td><td>I can't believe our luck!</td><td>When framing the opportunity as fortunate discovery</td><td>🔥🔥 Medium-High</td></tr><tr><td>6</td><td>"C'est pile ce qu'il nous faut !"</td><td>It's exactly what we need!</td><td>When connecting the activity to a shared need or desire</td><td>🔥🔥 Medium-High</td></tr></tbody></table>
+<h3>Extended Enthusiasm Expressions</h3>
+<p>These go beyond the core six and give you the VARIETY that scores high on Lexical Range.</p>
+<table><thead><tr><th>#</th><th>French Expression</th><th>Context</th><th>Example in Full Sentence</th></tr></thead><tbody><tr><td>7</td><td>"C'est un truc de dingue !"</td><td>When the opportunity is extraordinary</td><td>"Tu vas pas en revenir — c'est un truc de dingue ce que j'ai trouvé !"</td></tr><tr><td>8</td><td>"Ça va être top !"</td><td>Casual excitement — lighter than "de la bombe"</td><td>"Franchement, ça va être top. J'ai trop hâte !"</td></tr><tr><td>9</td><td>"J'ai trop hâte !"</td><td>Expressing personal anticipation</td><td>"Ça va être génial, j'ai trop hâte d'y être !"</td></tr><tr><td>10</td><td>"C'est exactement ce dont on rêvait !"</td><td>When the activity matches a shared dream or wish</td><td>"Tu te souviens quand on disait qu'on voulait faire ça ? C'est exactement ce dont on rêvait !"</td></tr><tr><td>11</td><td>"On va s'éclater !"</td><td>We're going to have a blast — very informal</td><td>"Allez, on y va ! On va s'éclater, je le sens !"</td></tr><tr><td>12</td><td>"Ça va être une expérience de ouf !"</td><td>Very informal — "ouf" = "fou" reversed (verlan)</td><td>"Crois-moi, ça va être une expérience de ouf !"</td></tr><tr><td>13</td><td>"On va passer un moment incroyable !"</td><td>Slightly more polished enthusiasm</td><td>"Je te promets, on va passer un moment incroyable ensemble."</td></tr><tr><td>14</td><td>"C'est le plan parfait !"</td><td>When summarizing why this activity is ideal</td><td>"Pas cher, pas loin, super fun — c'est le plan parfait !"</td></tr><tr><td>15</td><td>"Tu vas adorer, j'en suis sûr(e) !"</td><td>Personal guarantee of enjoyment</td><td>"Fais-moi confiance, tu vas adorer. J'en suis sûr(e) !"</td></tr></tbody></table>
+<h3>How to Distribute Enthusiasm Across the Conversation</h3>
+<p>You should NOT use all your enthusiasm expressions in the opening and then sound flat for the remaining 4 minutes. Enthusiasm must be DISTRIBUTED — appearing at strategic moments throughout the conversation.</p>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>╔══════════════════════════════════════════════════════════════════╗
+</span>║                                                                  ║
+║  ENTHUSIASM DISTRIBUTION MAP                                    ║
+║                                                                  ║
+║  OPENING (30-45 sec):                                           ║
+║  → 2-3 enthusiasm expressions                                   ║
+║  → "C'est un truc de dingue !" + "C'est pile ce qu'il          ║
+║    nous faut !"                                                  ║
+║                                                                  ║
+║  PRESENTATION (45-60 sec):                                      ║
+║  → 1-2 enthusiasm expressions                                   ║
+║  → "Le truc génial, c'est que..." + "Ça va être top !"        ║
+║                                                                  ║
+║  OBJECTION HANDLING (2-3 min):                                  ║
+║  → 1 enthusiasm expression per counter                          ║
+║  → Placed AFTER addressing the objection, not before            ║
+║  → "...et en plus, c'est une occasion en or !"                 ║
+║                                                                  ║
+║  CLOSING (30-45 sec):                                           ║
+║  → 2-3 enthusiasm expressions — PEAK ENERGY                    ║
+║  → "On va s'éclater !" + "C'est le moment ou jamais !"        ║
+║    + "J'ai trop hâte !"                                        ║
+║                                                                  ║
+║  TOTAL: 6-10 enthusiasm expressions across 5 minutes            ║
+║  → Enough for variety without sounding manic                    ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝</code></pre></div>
+<blockquote>
+<p>⚠️ <strong>THE ENTHUSIASM TRAP:</strong> There is a difference between genuine enthusiasm and PERFORMANCE. If every single sentence contains "INCROYABLE !" or "GÉNIAL !" or "DE LA BOMBE !", you sound like a television commercial, not a friend. Real enthusiasm has PEAKS and VALLEYS. You get excited, then you calm down to address a concern, then you build excitement again. The rhythm of enthusiasm matters more than the volume.</p>
+</blockquote>
+<hr>
+<h2>3️⃣ BANK 2: REASSURANCE EXPRESSIONS — Calming Fears</h2>
+<p>These expressions are your SAFETY NET. They make your friend feel secure, supported, and understood. You need them most during Phase 3 (Objection Handling) when the friend expresses anxiety, self-doubt, or worry about something going wrong.</p>
+<h3>The Core Reassurance Expressions</h3>
+<table><thead><tr><th>#</th><th>French Expression</th><th>Literal Meaning</th><th>When to Use</th><th>Warmth Level</th></tr></thead><tbody><tr><td>1</td><td>"T'inquiète (pas) !"</td><td>Don't worry!</td><td>Universal reassurance — works for any concern</td><td>💙💙 Warm</td></tr><tr><td>2</td><td>"Ne t'en fais pas pour ça."</td><td>Don't worry about that.</td><td>When addressing a specific concern the friend raised</td><td>💙💙 Warm</td></tr><tr><td>3</td><td>"C'est tout à fait dans tes cordes."</td><td>It's totally within your abilities.</td><td>When the friend doubts their skill or ability</td><td>💙💙💙 Very Warm</td></tr><tr><td>4</td><td>"Y a pas de quoi stresser."</td><td>There's nothing to stress about.</td><td>When the friend is anxious about the unknown</td><td>💙💙 Warm</td></tr><tr><td>5</td><td>"Je serai là, on gère ensemble."</td><td>I'll be there, we'll handle it together.</td><td>When the friend feels alone in their concern</td><td>💙💙💙💙 Maximum Warmth</td></tr><tr><td>6</td><td>"T'as largement le niveau."</td><td>You're more than capable.</td><td>When the friend underestimates themselves</td><td>💙💙💙 Very Warm</td></tr></tbody></table>
+<h3>Extended Reassurance Expressions</h3>
+<table><thead><tr><th>#</th><th>French Expression</th><th>Context</th><th>Example in Full Sentence</th></tr></thead><tbody><tr><td>7</td><td>"Fais-moi confiance sur ce coup-là."</td><td>When you need the friend to trust your judgment</td><td>"Je t'ai jamais mal conseillé(e), non ? Fais-moi confiance sur ce coup-là."</td></tr><tr><td>8</td><td>"Je te connais, tu vas assurer."</td><td>Personalized confidence — you KNOW them</td><td>"Arrête de stresser — je te connais, tu vas assurer comme toujours."</td></tr><tr><td>9</td><td>"Y a vraiment aucun risque."</td><td>When the concern is about danger or things going wrong</td><td>"C'est super encadré, y a vraiment aucun risque. Détends-toi."</td></tr><tr><td>10</td><td>"On peut partir quand tu veux."</td><td>The safety net — the friend can escape if needed</td><td>"Si ça te plaît pas, on s'éclipse. On peut partir quand tu veux."</td></tr><tr><td>11</td><td>"Personne va te juger."</td><td>When the friend fears social embarrassment</td><td>"C'est un environnement bienveillant. Personne va te juger, promis."</td></tr><tr><td>12</td><td>"Je serai là à chaque instant."</td><td>Maximum solidarity for anxious friends</td><td>"Tu seras pas seul(e), je serai là à chaque instant. On fait ça ensemble."</td></tr><tr><td>13</td><td>"C'est fait pour les débutants."</td><td>When the activity explicitly welcomes beginners</td><td>"T'as vu ? C'est marqué 'tous niveaux.' C'est fait pour les débutants comme nous."</td></tr><tr><td>14</td><td>"Le pire qui puisse arriver, c'est qu'on rigole."</td><td>Reframing worst-case scenario as comedy</td><td>"Franchement, le pire qui puisse arriver, c'est qu'on rigole de nous-mêmes."</td></tr><tr><td>15</td><td>"Tu vas te surprendre toi-même."</td><td>Planting the seed of hidden capability</td><td>"Je le sens — tu vas te surprendre toi-même. T'as plus de talent que tu crois."</td></tr></tbody></table>
+<h3>The Reassurance Sequence — How to Build Trust Progressively</h3>
+<p>Reassurance is not a one-shot tool. It works best when LAYERED — each statement building on the previous one to gradually dissolve the friend's fear.</p>
+<p>Here is the optimal sequence when facing an anxious friend:</p>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>STEP 1: VALIDATE their feeling
+</span>→ "Je comprends que ça fait un peu peur."
+→ Never say "T'as tort d'avoir peur" — that invalidates them
+
+STEP 2: NORMALIZE their concern
+→ "C'est normal, tout le monde ressent ça la première fois."
+→ They are not weird or weak for being nervous
+
+STEP 3: PROVIDE SPECIFIC reassurance
+→ "C'est fait pour les débutants, le prof guide tout."
+→ Address the EXACT thing they are worried about
+
+STEP 4: OFFER SOLIDARITY
+→ "Et je serai là avec toi. On gère ensemble."
+→ They are not facing this alone
+
+STEP 5: REFRAME the fear as excitement
+→ "Un peu de stress, c'est normal — ça veut dire que
+   tu vas vivre quelque chose d'intense !"
+→ Same physical sensation, different interpretation</code></pre></div>
+<h3>Complete Reassurance Sequence — Example</h3>
+<p>The friend says: "J'ai un peu peur, je sais pas danser et je connais personne..."</p>
+<p>Your response, following the 5-step sequence:</p>
+<p>"<strong>[Step 1]</strong> Je comprends, c'est normal d'avoir un peu le trac quand on connaît pas. <strong>[Step 2]</strong> Tout le monde est un peu stressé la première fois — même les gens qui ont l'air super à l'aise, ils étaient nerveux au début. <strong>[Step 3]</strong> Et c'est un cours pour débutants — le prof reprend tout depuis zéro, personne s'attend à ce que tu sois Beyoncé dès le premier cours. <strong>[Step 4]</strong> Et surtout, je serai là avec toi. On galère ensemble, on rigole ensemble, on apprend ensemble. <strong>[Step 5]</strong> Et tu sais quoi ? Ce petit stress que tu ressens là, c'est exactement ce qu'on ressent avant de faire un truc incroyable. Ça veut dire que ça va être mémorable !"</p>
+<blockquote>
+<p>💡 <strong>THE REASSURANCE-ENTHUSIASM BRIDGE:</strong> Notice how Step 5 transforms reassurance INTO enthusiasm. You start by calming the fear and end by building excitement. This is the ideal emotional arc for handling anxiety objections — down (validation), level (normalization), up (reframe). The friend's emotional state goes from anxious → calm → excited. That is the arc of successful persuasion.</p>
+</blockquote>
+<hr>
+<h2>4️⃣ BANK 3: PERSUASION EXPRESSIONS — Pushing Toward Yes</h2>
+<p>These expressions are your ENGINES. They do not describe the activity or address specific concerns — they directly PUSH the friend toward saying yes. They are the "come on, let's do this!" energy that keeps the conversation moving forward.</p>
+<h3>The Core Persuasion Expressions</h3>
+<table><thead><tr><th>#</th><th>French Expression</th><th>Literal Meaning</th><th>When to Use</th><th>Push Level</th></tr></thead><tbody><tr><td>1</td><td>"Fais-moi confiance !"</td><td>Trust me!</td><td>When you need the friend to stop analyzing and just say yes</td><td>⚡⚡⚡ Strong</td></tr><tr><td>2</td><td>"Tu vas voir, tu ne vas pas le regretter."</td><td>You'll see, you won't regret it.</td><td>When making a personal promise about the experience</td><td>⚡⚡⚡ Strong</td></tr><tr><td>3</td><td>"Laisse-toi tenter !"</td><td>Let yourself be tempted!</td><td>When the friend is on the fence — a gentle push</td><td>⚡⚡ Medium</td></tr><tr><td>4</td><td>"Qu'est-ce qu'on a à perdre ?"</td><td>What do we have to lose?</td><td>When minimizing risk — the universal persuasion question</td><td>⚡⚡ Medium</td></tr><tr><td>5</td><td>"Le jeu en vaut la chandelle."</td><td>It's worth the effort/cost.</td><td>When the friend weighs cost vs. benefit</td><td>⚡⚡⚡ Strong</td></tr><tr><td>6</td><td>"On n'a qu'une vie, profitons-en !"</td><td>We only live once, let's enjoy it!</td><td>YOLO appeal — the ultimate life-is-short argument</td><td>⚡⚡⚡⚡ Maximum</td></tr></tbody></table>
+<h3>Extended Persuasion Expressions</h3>
+<table><thead><tr><th>#</th><th>French Expression</th><th>Context</th><th>Persuasion Type</th></tr></thead><tbody><tr><td>7</td><td>"Quand est-ce que je t'ai déjà mal conseillé(e) ?"</td><td>When leveraging your track record as a friend</td><td>Trust-based</td></tr><tr><td>8</td><td>"Allez, dis oui ! Tu ne vas pas le regretter, je te le promets."</td><td>Direct appeal — friendly but firm</td><td>Emotional</td></tr><tr><td>9</td><td>"C'est maintenant ou jamais !"</td><td>When the opportunity is time-limited</td><td>Urgency</td></tr><tr><td>10</td><td>"On sera bêtes de pas en profiter."</td><td>We'd be stupid not to take advantage</td><td>Logic + Shame</td></tr><tr><td>11</td><td>"Fais-le pour moi alors !"</td><td>When all else fails — personal plea</td><td>Relationship</td></tr><tr><td>12</td><td>"Tu me remerciras après, je te le promets."</td><td>Promising future gratitude</td><td>Promise</td></tr><tr><td>13</td><td>"Allez, sors un peu de ta zone de confort !"</td><td>When the friend is stuck in routine</td><td>Challenge</td></tr><tr><td>14</td><td>"Je te lance un défi !"</td><td>Activating competitive instinct</td><td>Challenge</td></tr><tr><td>15</td><td>"Si t'aimes pas, je t'invite au resto pour me faire pardonner."</td><td>The bet — removes all risk from saying yes</td><td>Bet/Safety Net</td></tr></tbody></table>
+<h3>The Persuasion Escalation Ladder</h3>
+<p>Not all persuasion expressions carry the same weight. Some are gentle nudges. Others are powerful pushes. Using them in the wrong ORDER weakens your argument. Here is the optimal escalation:</p>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>╔══════════════════════════════════════════════════════════════════╗
+</span>║                                                                  ║
+║  PERSUASION ESCALATION — FROM GENTLE TO POWERFUL                ║
+║                                                                  ║
+║  Level 1: INVITATION (start here)                               ║
+║  → "Laisse-toi tenter !"                                       ║
+║  → "Ça te dit ?"                                                ║
+║  → "Qu'est-ce que t'en penses ?"                               ║
+║                                                                  ║
+║  Level 2: LOGICAL APPEAL (after first objection)                ║
+║  → "Qu'est-ce qu'on a à perdre ?"                              ║
+║  → "Le jeu en vaut la chandelle."                               ║
+║  → "On sera bêtes de pas en profiter."                          ║
+║                                                                  ║
+║  Level 3: PERSONAL APPEAL (after second objection)              ║
+║  → "Fais-moi confiance !"                                      ║
+║  → "Quand est-ce que je t'ai mal conseillé(e) ?"               ║
+║  → "Tu me remerciras après."                                    ║
+║                                                                  ║
+║  Level 4: EMOTIONAL PUSH (after third objection)                ║
+║  → "On n'a qu'une vie, profitons-en !"                         ║
+║  → "Fais-le pour moi alors !"                                  ║
+║  → "Allez, dis oui !"                                          ║
+║                                                                  ║
+║  Level 5: THE BET (last resort before closing)                  ║
+║  → "Si t'aimes pas, je t'invite au resto."                     ║
+║  → "Je te lance un défi !"                                     ║
+║  → "C'est maintenant ou jamais !"                              ║
+║                                                                  ║
+║  RULE: Never start at Level 5. Always start at Level 1.        ║
+║  Escalate only as needed based on resistance level.             ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝</code></pre></div>
+<blockquote>
+<p>⚠️ <strong>THE ESCALATION MISTAKE:</strong> Many candidates jump straight to Level 4 or 5 in their opening. They start with "C'EST MAINTENANT OU JAMAIS ! ON N'A QU'UNE VIE !" before the friend has even expressed an objection. This feels AGGRESSIVE, not persuasive. Save your strongest ammunition for when you actually need it. If you fire your biggest gun first, you have nothing left for the real battle.</p>
+</blockquote>
+<hr>
+<h2>5️⃣ BANK 4: OBJECTION-HANDLING EXPRESSIONS — The Pivot Toolkit</h2>
+<p>These expressions are your BRIDGES. They connect the friend's objection to your counter-argument. Without them, your responses feel like you are ignoring what the friend said. With them, your responses feel like you HEARD the friend and are building ON their point.</p>
+<p>This is the Acknowledgment + Pivot system introduced in Chapter 6 and used throughout Chapters 9-24. Here it is consolidated into one complete reference.</p>
+<h3>The Six Pivot Structures</h3>
+<p>Every objection response in TEF Section B should begin with ONE of these six structures. They all do the same thing — acknowledge the friend's point, then pivot to your counter — but they do it with different flavors.</p>
+<table><thead><tr><th>#</th><th>Structure</th><th>Example</th><th>Flavor</th></tr></thead><tbody><tr><td>1</td><td><strong>"Je comprends, mais..."</strong></td><td>"Je comprends que t'es fatigué(e), mais c'est justement pour ça que t'as besoin de ça."</td><td>Empathetic — warmest</td></tr><tr><td>2</td><td><strong>"C'est vrai que..., cependant..."</strong></td><td>"C'est vrai que c'est pas donné, cependant pense à la valeur de l'expérience."</td><td>Concessive — most balanced</td></tr><tr><td>3</td><td><strong>"Je vois ce que tu veux dire, par contre..."</strong></td><td>"Je vois ce que tu veux dire, par contre cette opportunité revient pas de sitôt."</td><td>Understanding — shows active listening</td></tr><tr><td>4</td><td><strong>"Justement !"</strong></td><td>"Tu dis que t'es crevé(e) ? Justement ! C'est pour ça qu'il faut sortir !"</td><td>Flipping — turns objection into argument FOR going</td></tr><tr><td>5</td><td><strong>"Raison de plus !"</strong></td><td>"T'as eu une semaine horrible ? Raison de plus pour se changer les idées !"</td><td>Judo move — uses objection's energy against itself</td></tr><tr><td>6</td><td><strong>"C'est tout le contraire en fait !"</strong></td><td>"Tu penses que ça va te fatiguer ? C'est tout le contraire — ça va te donner de l'énergie !"</td><td>Direct counter — strongest disagreement</td></tr></tbody></table>
+<h3>How to Choose the Right Pivot</h3>
+<p>The choice depends on HOW STRONGLY you want to disagree with the friend's objection:</p>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>FRIEND'S OBJECTION IS VALID AND REASONABLE:
+</span>→ Use #1 ("Je comprends, mais...") or #2 ("C'est vrai que..., cependant...")
+→ Example: "C'est trop cher" — the concern is legitimate
+→ You VALIDATE before countering
+
+FRIEND'S OBJECTION CAN BE TURNED INTO AN ARGUMENT FOR GOING:
+→ Use #4 ("Justement !") or #5 ("Raison de plus !")
+→ Example: "Je suis fatigué(e)" — tiredness is WHY they should go
+→ You FLIP the objection
+
+FRIEND'S OBJECTION IS BASED ON A MISCONCEPTION:
+→ Use #6 ("C'est tout le contraire en fait !")
+→ Example: "Ça va être ennuyeux" — when you know it won't be
+→ You CORRECT the assumption</code></pre></div>
+<blockquote>
+<p>💡 <strong>THE GOLDEN RATIO:</strong> In a 5-minute conversation with 3-5 objections, aim to use at LEAST 3 different pivot structures. Do not use "Je comprends, mais..." for every single objection — that becomes repetitive and loses impact. Vary your pivots the way you vary your arguments. This variety is DIRECTLY measured by the Lexical Range criterion.</p>
+</blockquote>
+<h3>Additional Pivot Expressions for Variety</h3>
+<p>Beyond the core six, these expressions add TEXTURE to your objection handling:</p>
+<table><thead><tr><th>French Expression</th><th>Function</th><th>When It Works Best</th></tr></thead><tbody><tr><td>"Écoute..."</td><td>Attention-getter before a counter-argument</td><td>When you need the friend to really LISTEN to your next point</td></tr><tr><td>"Attends, laisse-moi finir..."</td><td>Interruption prevention — keeps your turn</td><td>When you have a multi-part counter and need time to deliver it</td></tr><tr><td>"Oui, mais regarde ça autrement..."</td><td>Perspective shift</td><td>When the friend is stuck in one way of seeing the situation</td></tr><tr><td>"Tu as raison sur un point, mais..."</td><td>Partial agreement before counter</td><td>When you want to give ground on something small to win something big</td></tr><tr><td>"J'entends ce que tu dis, mais réfléchis..."</td><td>Thoughtful acknowledgment</td><td>When you want to sound considered, not reactive</td></tr><tr><td>"OK, admettons. Mais même dans ce cas..."</td><td>Hypothetical acceptance then counter</td><td>When you accept the objection AS TRUE and still show why it does not matter</td></tr></tbody></table>
+<h3>The "OK, Admettons" Technique — Advanced Pivot</h3>
+<p>This technique deserves special attention because it is extremely powerful and almost never used by TEF candidates at the B1-B2 level. Using it signals C1-level sophistication.</p>
+<p>The technique works like this: you ACCEPT the friend's objection as completely true, and THEN show that even if it IS true, the conclusion should still be "yes."</p>
+<p><strong>Example 1 — Money objection:</strong></p>
+<p>Friend: "C'est trop cher."</p>
+<p>You: "OK, admettons que c'est cher. Même dans ce cas — combien de fois tu as dépensé la même somme pour un truc que t'as oublié le lendemain ? Au moins là, tu gardes un souvenir pour toujours."</p>
+<p><strong>Example 2 — Skill objection:</strong></p>
+<p>Friend: "Je suis nul(le) en ça."</p>
+<p>You: "OK, admettons que t'es nul(le). Et alors ? Être nul(le) et s'amuser, c'est mille fois mieux qu'être bon et rester chez soi."</p>
+<p><strong>Example 3 — Time objection:</strong></p>
+<p>Friend: "J'ai pas le temps."</p>
+<p>You: "OK, admettons que t'as pas le temps. Mais t'auras TOUJOURS pas le temps. Si on attend d'avoir le temps, on fera jamais rien. Parfois faut PRENDRE le temps au lieu de le trouver."</p>
+<blockquote>
+<p>💡 <strong>WHY "OK, ADMETTONS" IS SO POWERFUL:</strong> Most persuasion techniques DENY the objection ("It's not expensive!" "You're not bad at it!" "You DO have time!"). The "admettons" technique does the OPPOSITE — it says "You're right. AND it doesn't matter." This is psychologically disarming because the friend prepared for you to argue. When you AGREE and then STILL make a compelling case, they have nothing left to push against.</p>
+</blockquote>
+<hr>
+<h2>6️⃣ BANK 5: FILLER WORDS — Buying Time Naturally</h2>
+<p>Filler words are the BREATH of natural speech. No one — not even the most eloquent native speaker — talks in perfect, uninterrupted, flawlessly constructed sentences. Real people pause. Real people search for words. Real people use little verbal cushions while their brain catches up with their mouth.</p>
+<p>In TEF Section B, using fillers CORRECTLY signals that you speak French naturally. Using NO fillers makes you sound robotic — like you memorized a script. Using TOO MANY fillers makes you sound hesitant and unprepared.</p>
+<h3>The Complete Filler Arsenal</h3>
+<table><thead><tr><th>#</th><th>Filler</th><th>Pronunciation</th><th>Function</th><th>Naturalness Level</th></tr></thead><tbody><tr><td>1</td><td><strong>Euh...</strong></td><td>/ø/</td><td>Thinking pause — the universal French hesitation</td><td>Very natural — everyone uses this</td></tr><tr><td>2</td><td><strong>Bah...</strong></td><td>/ba/</td><td>Casual filler — "well..."</td><td>Very informal — perfect for Section B</td></tr><tr><td>3</td><td><strong>Alors...</strong></td><td>/alɔʁ/</td><td>Transition — "so..." / "well then..."</td><td>Natural transition between ideas</td></tr><tr><td>4</td><td><strong>Bon...</strong></td><td>/bɔ̃/</td><td>Moving forward — "right..." / "OK so..."</td><td>Signals you are about to make a point</td></tr><tr><td>5</td><td><strong>Écoute...</strong></td><td>/ekut/</td><td>Getting attention — "listen..."</td><td>Perfect before an important argument</td></tr><tr><td>6</td><td><strong>Tu vois...</strong></td><td>/ty vwa/</td><td>Seeking understanding — "you see..."</td><td>Checking that the friend follows your logic</td></tr><tr><td>7</td><td><strong>Enfin...</strong></td><td>/ɑ̃fɛ̃/</td><td>Clarifying — "I mean..." / "well..."</td><td>When you want to rephrase or correct yourself</td></tr><tr><td>8</td><td><strong>Quoi.</strong></td><td>/kwa/</td><td>End-of-sentence emphasis — untranslatable</td><td>Very informal — adds spoken-French flavor</td></tr><tr><td>9</td><td><strong>Genre...</strong></td><td>/ʒɑ̃ʁ/</td><td>"Like..." — very informal</td><td>Use sparingly — signals casual register</td></tr><tr><td>10</td><td><strong>Du coup...</strong></td><td>/dy ku/</td><td>"So..." / "As a result..."</td><td>Very common in modern spoken French</td></tr><tr><td>11</td><td><strong>En fait...</strong></td><td>/ɑ̃ fɛt/</td><td>"Actually..." / "In fact..."</td><td>When correcting or adding nuance</td></tr><tr><td>12</td><td><strong>Voilà.</strong></td><td>/vwala/</td><td>"There you go" / conclusion marker</td><td>Wrapping up a point</td></tr><tr><td>13</td><td><strong>Tu sais...</strong></td><td>/ty sɛ/</td><td>"You know..." — creating connection</td><td>Maintaining conversational intimacy</td></tr><tr><td>14</td><td><strong>Comment dire...</strong></td><td>/kɔmɑ̃ diʁ/</td><td>"How to say..." — searching for words</td><td>When you genuinely need a moment to find the right expression</td></tr><tr><td>15</td><td><strong>Disons que...</strong></td><td>/dizɔ̃ kə/</td><td>"Let's say that..." — hedging</td><td>When you want to soften a statement</td></tr></tbody></table>
+<h3>The Filler Placement Rules</h3>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>╔══════════════════════════════════════════════════════════════════╗
+</span>║                                                                  ║
+║  RULE 1: NEVER start a response with just "Euh..."             ║
+║  → Start with a CONTENT word or expression, THEN pause          ║
+║  → BAD: "Euh... je comprends..."                               ║
+║  → GOOD: "Écoute... je comprends tout à fait."                 ║
+║                                                                  ║
+║  RULE 2: Use fillers BETWEEN ideas, not WITHIN them             ║
+║  → BAD: "C'est... euh... vraiment... euh... génial"            ║
+║  → GOOD: "C'est vraiment génial. Enfin... pas juste génial,    ║
+║    c'est exactement ce qu'il nous faut."                        ║
+║                                                                  ║
+║  RULE 3: Maximum 2-3 fillers per turn                           ║
+║  → More than that = you sound lost                              ║
+║  → Fewer than that = you sound rehearsed                        ║
+║  → 2-3 per response = you sound natural                         ║
+║                                                                  ║
+║  RULE 4: VARY your fillers                                      ║
+║  → If every pause is "Euh..." you sound limited                 ║
+║  → Mix: "Bon..." + "Écoute..." + "En fait..."                  ║
+║  → This variety counts toward Lexical Range                     ║
+║                                                                  ║
+║  RULE 5: Some fillers ADD MEANING, some are just pauses         ║
+║  → "Écoute" = getting attention (ADDS meaning)                  ║
+║  → "Du coup" = showing consequence (ADDS meaning)               ║
+║  → "Euh" = just a pause (NO meaning)                           ║
+║  → Prefer fillers that ADD meaning when possible                 ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝</code></pre></div>
+<h3>Filler Combinations That Sound Native</h3>
+<p>Native speakers often combine two fillers in sequence. Learning these combinations gives you an instantly natural-sounding pause:</p>
+<table><thead><tr><th>Combination</th><th>Sounds Like</th><th>When to Use</th></tr></thead><tbody><tr><td>"Bon, écoute..."</td><td>/bɔ̃ ekut/</td><td>Before delivering an important counter-argument</td></tr><tr><td>"Bah, en fait..."</td><td>/ba ɑ̃ fɛt/</td><td>Before correcting a misconception</td></tr><tr><td>"Alors, du coup..."</td><td>/alɔʁ dy ku/</td><td>Before drawing a conclusion</td></tr><tr><td>"Enfin, je veux dire..."</td><td>/ɑ̃fɛ̃ ʒə vø diʁ/</td><td>Before rephrasing something you just said</td></tr><tr><td>"Bon, voilà..."</td><td>/bɔ̃ vwala/</td><td>Before summarizing or concluding</td></tr><tr><td>"Bah, tu sais..."</td><td>/ba ty sɛ/</td><td>Before sharing a personal opinion casually</td></tr></tbody></table>
+<h3>Example — Fillers in Natural Conversation</h3>
+<p>Here is the same response written WITHOUT fillers and then WITH natural fillers. Notice how the second version sounds more human:</p>
+<p><strong>Without fillers (robotic):</strong><br>
+"Je comprends que tu es fatigué. C'est exactement pour ça qu'il faut sortir. L'énergie vient en bougeant. Tu vas te sentir mieux après."</p>
+<p><strong>With natural fillers (human):</strong><br>
+"Écoute, je comprends que t'es fatigué(e). Mais justement, c'est... enfin, c'est exactement pour ça qu'il faut qu'on bouge un peu, tu vois ? L'énergie, bah, ça vient en bougeant. Tu vas te sentir mieux après, je te le garantis."</p>
+<p>The second version is LONGER and LESS "perfect" — but it sounds like a real person talking. And in TEF Section B, sounding like a real person is what scores points.</p>
+<hr>
+<h2>7️⃣ BANK 6: TRANSITION EXPRESSIONS — Moving Between Arguments</h2>
+<p>Transitions are the CONNECTIVE TISSUE of your conversation. Without them, your arguments feel like disconnected bullet points. With them, your arguments flow into each other like a natural conversation.</p>
+<h3>The Complete Transition Arsenal</h3>
+<table><thead><tr><th>#</th><th>French Expression</th><th>Function</th><th>When to Use</th></tr></thead><tbody><tr><td>1</td><td>"Et en plus de ça..."</td><td>Adding another point</td><td>When you have a second benefit to add</td></tr><tr><td>2</td><td>"Sans parler du fait que..."</td><td>Introducing a bonus</td><td>When adding something the friend has not considered</td></tr><tr><td>3</td><td>"Mais attends, le meilleur c'est que..."</td><td>Building to climax</td><td>When you are about to reveal the strongest selling point</td></tr><tr><td>4</td><td>"D'un autre côté..."</td><td>Shifting perspective</td><td>When you want to show a different angle</td></tr><tr><td>5</td><td>"Ce que tu oublies, c'est que..."</td><td>Reminder of overlooked benefit</td><td>When the friend is focused on negatives</td></tr><tr><td>6</td><td>"Et puis bon..."</td><td>Casual addition</td><td>When adding a small but relevant point</td></tr><tr><td>7</td><td>"Après, y a aussi..."</td><td>Sequential addition</td><td>When listing multiple benefits</td></tr><tr><td>8</td><td>"Le truc que t'as pas considéré..."</td><td>New angle introduction</td><td>When bringing up something the friend has not thought about</td></tr><tr><td>9</td><td>"Et cerise sur le gâteau..."</td><td>Final bonus — the cherry on top</td><td>When you have one last great detail to share</td></tr><tr><td>10</td><td>"Pour couronner le tout..."</td><td>Summary highlight</td><td>When wrapping up with the best point</td></tr></tbody></table>
+<h3>How to Chain Arguments Using Transitions</h3>
+<p>Here is how transitions transform a LIST of arguments into a FLOWING conversation:</p>
+<p><strong>Without transitions (choppy):</strong><br>
+"C'est pas cher. C'est près de chez nous. C'est pour les débutants. On mange ce qu'on prépare."</p>
+<p><strong>With transitions (flowing):</strong><br>
+"D'abord, c'est vraiment pas cher — 35 euros tout compris. <strong>Et en plus de ça</strong>, c'est à dix minutes de chez nous, donc zéro galère de transport. <strong>Sans parler du fait que</strong> c'est fait pour les débutants, y a aucune pression. <strong>Et cerise sur le gâteau</strong>, on mange ce qu'on prépare à la fin !"</p>
+<p>The second version covers the SAME four points but sounds like natural speech because each point is connected to the next by a transition that adds RHYTHM and FLOW.</p>
+<blockquote>
+<p>💡 <strong>THE TRANSITION SCORING SECRET:</strong> Transitions are one of the easiest ways to boost your Coherence &amp; Fluency score (25%). Examiners listen for LOGICAL CONNECTIONS between ideas. A response that says "It's cheap. It's close. It's fun." scores lower than "It's cheap, and on top of that it's close, and the cherry on top is that it's fun" — even though the CONTENT is identical. The transitions signal organized thinking and natural speech patterns.</p>
+</blockquote>
+<h3>The Presentation Phrases — Specific Transitions for Phase 2</h3>
+<p>When you are presenting the activity details (Phase 2 — Chapter 5), you need specific transitions designed for INFORMATION DELIVERY. These are different from argument-chaining transitions because they introduce FACTS, not arguments.</p>
+<table><thead><tr><th>Function</th><th>French Expressions</th></tr></thead><tbody><tr><td><strong>Introducing the activity</strong></td><td>"En gros, c'est..." / "Le concept, c'est que..." / "Voilà de quoi il s'agit..."</td></tr><tr><td><strong>Highlighting a key feature</strong></td><td>"Le truc génial, c'est que..." / "Ce qui m'a accroché, c'est..." / "Le plus intéressant..."</td></tr><tr><td><strong>Giving practical details</strong></td><td>"Concrètement, ça se passe..." / "Pour ce qui est du prix..." / "Question horaire..."</td></tr><tr><td><strong>Adding personal connection</strong></td><td>"Ça m'a tout de suite fait penser à toi parce que..." / "Je nous vois tellement faire ça ensemble !"</td></tr></tbody></table>
+<h3>Example — Using Presentation Phrases in Phase 2</h3>
+<p>"<strong>Alors voilà de quoi il s'agit</strong> : c'est un atelier photo en plein air samedi prochain. <strong>Le concept, c'est que</strong> tu apprends les bases avec un pro pendant deux heures, et après on part en balade pour mettre tout ça en pratique. **Ce qui m'a vraiment accroché, c'est qu'**ils prêtent le matériel — donc pas besoin d'avoir un appareil sophistiqué. <strong>Et franchement</strong>, ça m'a tout de suite fait penser à toi parce que t'as toujours eu un œil artistique."</p>
+<p>Notice how FOUR different presentation phrases create a smooth, natural delivery of information. Each phrase serves a different function — introducing, explaining, highlighting, personalizing — and together they make you sound like someone who is genuinely sharing something exciting, not reading a description.</p>
+<hr>
+<h2>8️⃣ THE 5-FINGER RULE — YOUR EMERGENCY PROTOCOL</h2>
+<p>There will be a moment in the exam when your mind goes blank. It happens to everyone. The examiner raises an objection you did not prepare for. Your rehearsed arguments run out. You have already used your best idioms. You cannot think of what to say next.</p>
+<p>This is the moment that separates good candidates from great ones. Good candidates freeze or repeat something they already said. Great candidates have the 5-FINGER RULE.</p>
+<h3>What the 5-Finger Rule Is</h3>
+<p>The 5-Finger Rule is a MENTAL FRAMEWORK — five universal benefit categories that apply to ANY activity, ANY scenario, ANY objection. When your mind goes blank, look at your hand. Each finger represents one benefit category. Pick ANY finger and build an argument around that category.</p>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>╔══════════════════════════════════════════════════════════════════╗
+</span>║                                                                  ║
+║              THE 5-FINGER RULE                                  ║
+║                                                                  ║
+║         👆 THUMB:  FUN                                           ║
+║         👆 INDEX:  GROWTH                                        ║
+║         👆 MIDDLE: CONNECTION                                    ║
+║         👆 RING:   HEALTH                                        ║
+║         👆 PINKY:  MEMORY                                        ║
+║                                                                  ║
+║  ANY activity can be sold through ANY of these five angles.     ║
+║  When you run out of specific arguments, pick a finger.         ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝</code></pre></div>
+<h3>The Five Categories Explained</h3>
+<table><thead><tr><th>Finger</th><th>Category</th><th>Core Sentence</th><th>Expanded Version</th></tr></thead><tbody><tr><td><strong>Thumb</strong></td><td><strong>FUN</strong></td><td>"On va s'éclater !"</td><td>"Le but c'est de s'amuser ! On oublie le stress, on rigole, on profite. C'est ça qui compte."</td></tr><tr><td><strong>Index</strong></td><td><strong>GROWTH</strong></td><td>"On va apprendre quelque chose."</td><td>"C'est l'occasion d'apprendre un truc nouveau. Ça nous sort de notre routine et ça nous enrichit."</td></tr><tr><td><strong>Middle</strong></td><td><strong>CONNECTION</strong></td><td>"On va partager un moment ensemble."</td><td>"Ça fait trop longtemps qu'on a pas passé du vrai temps ensemble. Ce moment, il est pour NOUS."</td></tr><tr><td><strong>Ring</strong></td><td><strong>HEALTH</strong></td><td>"C'est bon pour nous."</td><td>"C'est bon pour le moral, pour le corps, pour l'esprit. On a besoin de ça pour aller bien."</td></tr><tr><td><strong>Pinky</strong></td><td><strong>MEMORY</strong></td><td>"On va créer des souvenirs."</td><td>"Dans dix ans, on reparlera de ce jour. C'est ces moments-là qui rendent la vie belle."</td></tr></tbody></table>
+<h3>How to Use the 5-Finger Rule in Real Time</h3>
+<p><strong>Scenario:</strong> You are trying to convince your friend to go to a cooking class. You have already countered their money objection, their skill anxiety, and their time concern. The examiner raises a FOURTH objection you did not prepare for: "Et puis j'ai pas vraiment faim en ce moment..."</p>
+<p>Your mind goes blank. You did not prepare for "I'm not hungry" as an objection.</p>
+<p><strong>5-Finger Rule activation:</strong></p>
+<p>You mentally scan your fingers:</p>
+<ul>
+<li>Thumb (FUN) — already used</li>
+<li>Index (GROWTH) — already used</li>
+<li>Middle (CONNECTION) — NOT USED YET</li>
+</ul>
+<p>You grab the CONNECTION finger:</p>
+<p>"Mais c'est pas une question de faim ! C'est une question de passer un moment ENSEMBLE. Ça fait combien de temps qu'on a pas fait un truc tous les deux, un vrai truc, pas juste un café rapide ? Ce cours de cuisine, c'est notre moment. On cuisine, on rigole, on se retrouve. La nourriture c'est juste le prétexte — le vrai truc, c'est nous."</p>
+<p><strong>Result:</strong> You delivered a coherent, emotional, well-structured response to an objection you NEVER prepared for. The 5-Finger Rule gave you a direction when you had none.</p>
+<h3>The 5-Finger Rule Applied to Every Scenario Type</h3>
+<table><thead><tr><th>Scenario</th><th>Best Finger to Default To</th><th>Why</th></tr></thead><tbody><tr><td><strong>Sports/Fitness</strong></td><td>Ring (HEALTH)</td><td>Physical activity = health is the obvious angle</td></tr><tr><td><strong>Cultural Event</strong></td><td>Thumb (FUN)</td><td>Entertainment = fun is the core promise</td></tr><tr><td><strong>Workshop</strong></td><td>Index (GROWTH)</td><td>Learning = growth is the primary selling point</td></tr><tr><td><strong>Trip</strong></td><td>Pinky (MEMORY)</td><td>Travel = memories are the ultimate reward</td></tr><tr><td><strong>Volunteering</strong></td><td>Middle (CONNECTION)</td><td>Helping together = connection is the emotional core</td></tr><tr><td><strong>Nightlife</strong></td><td>Thumb (FUN)</td><td>Going out = fun is what you are selling</td></tr></tbody></table>
+<p>But remember — the power of the 5-Finger Rule is that ANY finger works for ANY scenario. A sports activity can be sold through MEMORY ("Imagine the photos!"). A concert can be sold through GROWTH ("You'll discover new music!"). A trip can be sold through HEALTH ("The fresh air will do you good!"). The categories are UNIVERSAL.</p>
+<blockquote>
+<p>💡 <strong>PRACTICE EXERCISE:</strong> Pick any activity — a random one, like "going to an aquarium." Now sell it using ALL FIVE fingers, one argument per finger:</p>
+<ul>
+<li><strong>FUN:</strong> "On va s'éclater devant les requins et les méduses !"</li>
+<li><strong>GROWTH:</strong> "On va apprendre plein de trucs sur la vie marine !"</li>
+<li><strong>CONNECTION:</strong> "C'est le genre de sortie parfaite pour se retrouver."</li>
+<li><strong>HEALTH:</strong> "Marcher, observer, respirer — c'est hyper relaxant et bon pour le moral."</li>
+<li><strong>MEMORY:</strong> "Tu te souviens de la dernière fois qu'on a fait un truc comme ça ? On en parle encore !"</li>
+</ul>
+<p>If you can do this for an AQUARIUM, you can do it for ANYTHING the examiner throws at you.</p>
+</blockquote>
+<hr>
+<h2>9️⃣ PUTTING IT ALL TOGETHER — THE EXPRESSION FLOW IN A REAL CONVERSATION</h2>
+<p>Now let us see how all six banks work TOGETHER in a single conversation turn. This is the difference between using expressions as isolated items and using them as a FLOWING SYSTEM.</p>
+<h3>A Single Response Using All Six Banks</h3>
+<p>The examiner says: "Bof, un atelier poterie, j'ai pas trop envie..."</p>
+<p>Your response:</p>
+<p>"<strong>[Filler]</strong> Écoute, <strong>[Pivot]</strong> je comprends que ça te parle pas au premier abord, <strong>[Filler]</strong> mais en fait, <strong>[Reassurance]</strong> c'est tout à fait dans tes cordes — t'as des mains de créateur/créatrice, je le sais. <strong>[Transition]</strong> Et le truc génial, c'est que <strong>[Enthusiasm]</strong> c'est hyper relaxant — tu modèles l'argile, tu te concentres sur tes mains, tu oublies tout le reste. C'est comme de la méditation mais en version fun. <strong>[Transition]</strong> Et en plus de ça, <strong>[Persuasion]</strong> tu repars avec ta propre création — un bol, un vase, un truc unique fait par TES mains. <strong>[Transition]</strong> Et cerise sur le gâteau, <strong>[Persuasion]</strong> qu'est-ce qu'on a à perdre ? Deux heures et 30 euros pour découvrir un talent caché et passer un super moment ensemble. <strong>[Enthusiasm]</strong> Franchement, c'est une occasion en or !"</p>
+<h3>The Bank Breakdown</h3>
+<table><thead><tr><th>Part of Response</th><th>Bank Used</th><th>Specific Expression</th></tr></thead><tbody><tr><td>"Écoute,"</td><td>Filler</td><td>Attention-getter</td></tr><tr><td>"je comprends que ça te parle pas,"</td><td>Pivot</td><td>Acknowledgment</td></tr><tr><td>"mais en fait,"</td><td>Filler</td><td>Transition</td></tr><tr><td>"c'est tout à fait dans tes cordes"</td><td>Reassurance</td><td>Core #3</td></tr><tr><td>"le truc génial, c'est que"</td><td>Transition</td><td>Presentation phrase</td></tr><tr><td>"c'est hyper relaxant"</td><td>Enthusiasm</td><td>Activity description</td></tr><tr><td>"Et en plus de ça,"</td><td>Transition</td><td>#1 — adding point</td></tr><tr><td>"tu repars avec ta propre création"</td><td>Persuasion</td><td>Tangible benefit</td></tr><tr><td>"Et cerise sur le gâteau,"</td><td>Transition</td><td>#9 — final bonus</td></tr><tr><td>"qu'est-ce qu'on a à perdre ?"</td><td>Persuasion</td><td>Core #4</td></tr><tr><td>"c'est une occasion en or !"</td><td>Enthusiasm</td><td>Core #1</td></tr></tbody></table>
+<p>That single response used expressions from ALL SIX banks — fillers, pivots, reassurance, transitions, persuasion, and enthusiasm — woven together into a natural, flowing, persuasive argument. THIS is what B2/C1 speech sounds like.</p>
+<hr>
+<h2>🔟 THE EXPRESSION DOSAGE GUIDE — HOW MANY OF EACH</h2>
+<p>For a 5-minute conversation, here are the target numbers for each expression type:</p>
+<table><thead><tr><th>Expression Type</th><th>Target Per Conversation</th><th>Too Few</th><th>Too Many</th></tr></thead><tbody><tr><td><strong>Enthusiasm</strong></td><td>6-10</td><td>Sounds flat and unconvincing</td><td>Sounds manic and fake</td></tr><tr><td><strong>Reassurance</strong></td><td>3-5</td><td>Friend's fears go unaddressed</td><td>Sounds patronizing</td></tr><tr><td><strong>Persuasion</strong></td><td>4-6</td><td>No forward momentum</td><td>Sounds pushy and aggressive</td></tr><tr><td><strong>Pivots</strong></td><td>3-5 (one per objection)</td><td>Responses feel disconnected from objections</td><td>N/A — you use one per objection</td></tr><tr><td><strong>Fillers</strong></td><td>8-15 total</td><td>Sounds rehearsed and robotic</td><td>Sounds lost and unprepared</td></tr><tr><td><strong>Transitions</strong></td><td>5-8</td><td>Arguments feel like a disjointed list</td><td>Sounds over-structured</td></tr><tr><td><strong>Idioms</strong> (from Chapters 9-24)</td><td>4-8</td><td>Limited lexical range</td><td>Sounds like you are forcing them in</td></tr></tbody></table>
+<h3>The Quick Math</h3>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>╔══════════════════════════════════════════════════════════════════╗
+</span>║                                                                  ║
+║  5-MINUTE CONVERSATION = approximately 8-12 exchanges           ║
+║                                                                  ║
+║  YOUR OPENING (1 turn):                                         ║
+║  → 2 enthusiasm + 2 transitions + 1-2 fillers                  ║
+║                                                                  ║
+║  YOUR PRESENTATION (1 turn):                                    ║
+║  → 1-2 enthusiasm + 2-3 transitions + 1-2 fillers              ║
+║                                                                  ║
+║  EACH OBJECTION RESPONSE (3-5 turns):                           ║
+║  → 1 pivot + 1 reassurance or persuasion + 1 transition         ║
+║  → + 1-2 fillers + 1 enthusiasm                                ║
+║  → + 1 idiom (not in every turn — every other turn)            ║
+║                                                                  ║
+║  YOUR CLOSING (1 turn):                                         ║
+║  → 2-3 enthusiasm + 1-2 persuasion + 1 transition              ║
+║  → + 1 idiom                                                    ║
+║                                                                  ║
+║  TOTAL ACROSS ALL TURNS:                                        ║
+║  → ~8 enthusiasm, ~4 reassurance/persuasion, ~5 transitions     ║
+║  → ~3-5 pivots, ~12 fillers, ~4-6 idioms                      ║
+║  → = A rich, varied, natural-sounding conversation              ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝</code></pre></div>
+<hr>
+<h2>1️⃣1️⃣ THE EXPRESSION PRACTICE METHOD — HOW TO MEMORIZE</h2>
+<p>Knowing these expressions intellectually is not enough. You need them to be AUTOMATIC — available without thinking, the way you reach for "Hello" in English without consciously deciding to say it.</p>
+<h3>The Three-Stage Memorization Process</h3>
+<p><strong>Stage 1: Recognition (Days 1-3)</strong></p>
+<p>Read through each bank. For each expression, make sure you understand:</p>
+<ul>
+<li>What it means</li>
+<li>When to use it</li>
+<li>How it sounds (pronounce it out loud)</li>
+</ul>
+<p>Do NOT try to memorize yet. Just familiarize.</p>
+<p><strong>Stage 2: Recall (Days 4-7)</strong></p>
+<p>Cover the French column and try to produce each expression from the English meaning or the function description. Do this ALOUD — your mouth needs to practice the sounds, not just your eyes.</p>
+<p>Test yourself in random order, not in the order they appear in this chapter. Your brain needs to access them from ANY entry point, not just in sequence.</p>
+<p><strong>Stage 3: Deployment (Days 8-14)</strong></p>
+<p>Practice using the expressions in CONTEXT. Pick a random scenario. Give yourself a random objection. Respond out loud using expressions from ALL SIX banks. Time yourself — you should be able to produce a 3-4 sentence response within 5-10 seconds.</p>
+<p>Record yourself. Listen back. Ask: "Does this sound like a real person or like a textbook?"</p>
+<h3>The "Morning Coffee" Technique</h3>
+<p>Every morning for two weeks before your exam, pick ONE expression from each bank (6 total) and use them all in a single practice response. Different expressions each day. By exam day, you will have practiced over 80 individual expressions in context — and they will feel as natural as saying "Bonjour."</p>
+<p><strong>Monday morning example — today's 6 expressions:</strong></p>
+<ul>
+<li>Enthusiasm: "C'est pile ce qu'il nous faut !"</li>
+<li>Reassurance: "Je serai là, on gère ensemble."</li>
+<li>Persuasion: "Qu'est-ce qu'on a à perdre ?"</li>
+<li>Pivot: "Justement !"</li>
+<li>Filler: "Bon, écoute..."</li>
+<li>Transition: "Et cerise sur le gâteau..."</li>
+</ul>
+<p><strong>Practice response (any scenario):</strong><br>
+"Bon, écoute, j'ai trouvé un truc — c'est pile ce qu'il nous faut ! [Friend objects: 'J'ai peur...'] Justement ! C'est normal d'avoir peur, mais je serai là, on gère ensemble. Et cerise sur le gâteau, c'est gratuit. Qu'est-ce qu'on a à perdre ?"</p>
+<p>Six expressions, deployed naturally, in under 30 seconds. Do this every morning and by exam day, these expressions will be REFLEXES, not memories.</p>
+<hr>
+<h2>1️⃣2️⃣ THE DANGER ZONE — EXPRESSIONS THAT CAN BACKFIRE</h2>
+<p>Not all expressions are safe in all contexts. Some can sound aggressive, patronizing, or insincere if used at the wrong moment. Here is your warning list.</p>
+<table><thead><tr><th>Expression</th><th>Danger</th><th>When It Backfires</th><th>Safe Alternative</th></tr></thead><tbody><tr><td>"Fais-moi confiance !"</td><td>Can sound controlling</td><td>When used too early — trust must be earned in the conversation first</td><td>"Tu sais que je te conseillerais jamais un truc nul."</td></tr><tr><td>"T'as pas d'excuse !"</td><td>Can sound aggressive</td><td>When the friend has genuine concerns you have not addressed</td><td>"Franchement, y a plus grand-chose qui nous retient, non ?"</td></tr><tr><td>"Arrête de te plaindre !"</td><td>Can sound dismissive</td><td>NEVER — this invalidates the friend completely</td><td>"Je comprends tes réserves, mais regarde le côté positif..."</td></tr><tr><td>"C'est pas la mort !"</td><td>Can sound minimizing</td><td>When the friend's concern is genuine and emotional</td><td>"C'est vraiment pas si grave que ça en a l'air."</td></tr><tr><td>"Tu dis toujours ça !"</td><td>Can sound accusatory</td><td>When the friend feels attacked for their personality</td><td>"Je sais que c'est ta première réaction, mais pense-y deux secondes..."</td></tr><tr><td>"Tout le monde y va sauf toi"</td><td>Can sound like peer pressure</td><td>When used aggressively — fine as gentle FOMO, bad as pressure</td><td>"Beaucoup de gens y vont, ce serait cool qu'on soit là aussi."</td></tr></tbody></table>
+<blockquote>
+<p>⚠️ <strong>THE GOLDEN SAFETY RULE:</strong> Before deploying ANY expression, pass it through this mental filter: "Would I feel good if my friend said this to me?" If the answer is no — if you would feel pressured, dismissed, or manipulated — do not say it. Choose the warmer alternative. The examiner is evaluating your INTERACTION QUALITY, and that means being a good friend, not just a persistent one.</p>
+</blockquote>
+<hr>
+<h2>1️⃣3️⃣ QUICK REFERENCE CARD — THE EXPRESSIONS YOU MUST KNOW</h2>
+<p>If you memorize NOTHING ELSE from this chapter, memorize these. They are the absolute essentials — the expressions that work in EVERY scenario, against EVERY objection, at EVERY point in the conversation.</p>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>╔══════════════════════════════════════════════════════════════════╗
+</span>║                                                                  ║
+║  🎯 THE 10 ESSENTIAL EXPRESSIONS FOR TEF SECTION B             ║
+║                                                                  ║
+║  OPENING:                                                        ║
+║  "Tu ne vas jamais croire ce que j'ai trouvé !"                ║
+║                                                                  ║
+║  PRESENTING:                                                     ║
+║  "Le truc génial, c'est que..."                                 ║
+║                                                                  ║
+║  PIVOTING:                                                       ║
+║  "Je comprends, mais justement..."                              ║
+║                                                                  ║
+║  REASSURING:                                                     ║
+║  "T'inquiète, c'est tout à fait dans tes cordes."              ║
+║                                                                  ║
+║  PERSUADING:                                                     ║
+║  "Qu'est-ce qu'on a à perdre ?"                                ║
+║                                                                  ║
+║  CREATING URGENCY:                                               ║
+║  "C'est maintenant ou jamais !"                                 ║
+║                                                                  ║
+║  SHOWING ENTHUSIASM:                                             ║
+║  "C'est une occasion en or !"                                   ║
+║                                                                  ║
+║  TRANSITIONING:                                                  ║
+║  "Et cerise sur le gâteau..."                                   ║
+║                                                                  ║
+║  FILLING NATURALLY:                                              ║
+║  "Bon, écoute..."                                               ║
+║                                                                  ║
+║  CLOSING:                                                        ║
+║  "Allez, c'est décidé ! On y va ?"                             ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝</code></pre></div>
+<p>And when your mind goes completely blank:</p>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>╔══════════════════════════════════════════════════════════════════╗
+</span>║                                                                  ║
+║  🖐️ THE 5-FINGER RULE                                          ║
+║                                                                  ║
+║  👆 FUN      — "On va s'éclater !"                              ║
+║  👆 GROWTH   — "On va apprendre quelque chose."                 ║
+║  👆 CONNECTION — "On va partager un moment ensemble."            ║
+║  👆 HEALTH   — "C'est bon pour nous."                           ║
+║  👆 MEMORY   — "On va créer des souvenirs."                     ║
+║                                                                  ║
+║  Pick ANY finger. Build an argument. Keep talking.              ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝</code></pre></div>
+<hr>
+<h2>1️⃣4️⃣ KEY TAKEAWAYS FROM CHAPTER 25</h2>
+<blockquote>
+<p><strong>1.</strong> Native speakers build sentences from PRE-ASSEMBLED CHUNKS (expressions), not individual words. Learning expressions instead of vocabulary is the fastest path to fluent-sounding speech.</p>
+<p><strong>2.</strong> Six expression banks cover every conversational need: Enthusiasm (fuel), Reassurance (safety net), Persuasion (engine), Pivots (bridges), Fillers (breath), and Transitions (connective tissue).</p>
+<p><strong>3.</strong> Enthusiasm must be DISTRIBUTED across the conversation — peaks at opening and closing, steady throughout the middle. Never front-load all your energy.</p>
+<p><strong>4.</strong> Reassurance works best when LAYERED in sequence: Validate → Normalize → Specify → Solidarize → Reframe.</p>
+<p><strong>5.</strong> Persuasion must ESCALATE: start with gentle invitations (Level 1), build to logical appeals (Level 2), then personal appeals (Level 3), then emotional pushes (Level 4), and only use the bet/challenge (Level 5) as a last resort.</p>
+<p><strong>6.</strong> The "OK, admettons" technique is an advanced pivot that ACCEPTS the objection as true and STILL makes the case for going. It signals C1-level sophistication.</p>
+<p><strong>7.</strong> Fillers make you sound HUMAN. Use 2-3 per turn, vary them, prefer meaning-adding fillers ("écoute," "en fait") over empty ones ("euh"). Zero fillers = robotic. Too many = unprepared.</p>
+<p><strong>8.</strong> Transitions are the EASIEST way to boost your Coherence &amp; Fluency score. Use 5-8 across the conversation to connect your arguments into a flowing narrative.</p>
+<p><strong>9.</strong> The 5-Finger Rule (Fun, Growth, Connection, Health, Memory) is your emergency protocol when your mind goes blank. ANY finger works for ANY scenario.</p>
+<p><strong>10.</strong> Target numbers for 5 minutes: ~8 enthusiasm, ~4 reassurance, ~5 persuasion, ~4 pivots, ~12 fillers, ~6 transitions, ~5 idioms. This creates a rich, varied, natural conversation.</p>
+<p><strong>11.</strong> The "Morning Coffee" technique — practicing 6 expressions per day in context for 2 weeks — transforms memorized expressions into automatic reflexes.</p>
+<p><strong>12.</strong> Some expressions can BACKFIRE if used at the wrong moment. Always pass your words through the filter: "Would I feel good if my friend said this to me?"</p>
+</blockquote>
+<hr>
+</div>
+</div>
+
+<!-- ========== data-index="17" ========== -->
+
+        </div>
+
+        <div class="nav-bar">
+            <a href="chapter-25.html" class="nav-button prev">← Previous Chapter</a>
+            <div class="page-info">
+                <a href="index.html" class="nav-button home">📚 Table of Contents</a><br>
+                <span style="margin-top:8px;display:block">Chapter 25 of 28</span>
+            </div>
+            <a href="chapter-27.html" class="nav-button next">Next Chapter →</a>
+        </div>
+    </div>
+
+    
+    <div id="progress-track"><div id="progress-fill"></div></div>
+    <div id="progress-pct">0%</div>
+
+
+    <script>
+    const fill = document.getElementById('progress-fill');
+    const pct  = document.getElementById('progress-pct');
+    function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        const scrolled  = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        fill.style.height = scrolled + '%';
+        pct.textContent   = Math.round(scrolled) + '%';
+    }
+    window.addEventListener('scroll', updateProgress);
+    updateProgress();
+
+    document.addEventListener('keydown', function(e) {
+        if (['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) return;
+        if (e.key === 'ArrowLeft') {
+            const b = document.querySelector('.nav-button.prev');
+            if (b && !b.classList.contains('disabled')) window.location.href = b.href;
+        }
+        if (e.key === 'ArrowRight') {
+            const b = document.querySelector('.nav-button.next');
+            if (b && !b.classList.contains('disabled')) window.location.href = b.href;
+        }
+    });
+    </script>
+
+</body>
+</html>
